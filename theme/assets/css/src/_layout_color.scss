@@ -1,0 +1,284 @@
+// red theme
+body.red-theme {
+  header {
+    .brand-area {
+      h1 {
+        a {
+          color: $red-color;
+        }
+      }
+    }
+    > div {
+      nav {
+        .nav-list {
+          li {
+            &.on,
+            &.open-fixed {
+              > a {
+                color: $red-color;
+              }
+            }
+            &.sub-menu.open {
+              > a {
+                color: $red-color;
+                &::after {
+                  border-color: $red-color transparent transparent transparent;
+                }
+              }
+            }
+            &.sub-menu {
+              > .sub-wrap {
+                 @include transparent-backgound($red-bg-color, 0.8);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-wrap {
+    .footer {
+      em {
+        a {
+          color: $red-color;
+        }
+      }
+    }
+  }
+  .no-banner {
+    .sub-banner {
+      > .xe-container > div .breadcrumb {
+        li {
+          &.on {
+            color: $red-color;
+          }
+        }
+      }
+    }
+  }
+  .owl-slider {
+    .owl-controls {
+      .owl-dot {
+        &.active span {
+          background-color: $red-color;
+        }
+      }
+    }
+    &.owl-bottom {
+      .item-slide {
+        .item-slide-text {
+          strong {
+            color: $red-color;
+          }
+        }
+      }
+    }
+  }
+  
+  .boram-widget-group {
+    .widget-board-list{
+      .boram-widget{
+        .widget-board-content{
+          li{
+            >a{
+              &:hover em{
+                color: $red-color;
+              }
+            }
+          }
+        }
+      }
+    } 
+    .widget-direct-link {
+      .boram-widget {
+        strong {
+          color: $red-color;
+        }
+      }
+      &.v2 {
+        background-color: $red-bg-color;
+      }
+    }
+  }
+  .boram-contact-form {
+    h3 {
+      color: $red-color;
+    }
+    .btn-contact{      
+      background-color: $red-color;      
+    }
+  }
+  @media (min-width: 992px) {
+    header {    
+      > div {
+        nav {
+          .nav-list {
+            li {
+              a{
+                &:hover{
+                  color: $red-color !important;  
+                }
+              }
+              &.sub-menu {
+                .sub-menu-list {
+                  .sub-menu.open {
+                    >a{
+                      color: $red-color;
+                    }
+                    .sub-wrap {
+                      &::after {                      
+                        background-color: $red-color;                      
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// yellow theme
+body.yellow-theme {
+  header {
+    .brand-area {
+      h1 {
+        a {
+          color: $yellow-color;
+        }
+      }
+    }
+    > div {
+      nav {
+        .nav-list {
+          li {
+            &.on,
+            &.open-fixed {
+              > a {
+                color: $yellow-color;
+              }
+            }
+            &.sub-menu.open {
+              > a {
+                color: $yellow-color;
+                &::after {
+                  border-color: $yellow-color transparent transparent transparent;
+                }
+              }
+            }
+            &.sub-menu {
+              > .sub-wrap {                
+                @include transparent-backgound($yellow-bg-color, 0.8);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-wrap {
+    .footer {
+      em {
+        a {
+          color: $yellow-color;
+        }
+      }
+    }
+  }
+  .no-banner {
+    .sub-banner {
+      > .xe-container > div .breadcrumb {
+        li {
+          &.on {
+            color: $yellow-color;
+          }
+        }
+      }
+    }
+  }
+  .owl-slider {
+    .owl-controls {
+      .owl-dot {
+        &.active span {
+          background-color: $yellow-color;
+        }
+      }
+    }
+    &.owl-bottom {
+      .item-slide {
+        .item-slide-text {
+          strong {
+            color: $yellow-color;
+          }
+        }
+      }
+    }
+  }
+  .boram-widget-group {
+    .widget-board-list{
+      .boram-widget{
+        .widget-board-content{
+          li{
+            >a{
+              &:hover em{
+                color: $yellow-color;
+              }
+            }
+          }
+        }
+      }
+    } 
+    .widget-direct-link {
+      .boram-widget {
+        strong {
+          color: $yellow-color;
+        }
+      }
+      &.v2 {
+        background-color: $yellow-bg-color;
+      }
+    }
+  }
+  .boram-contact-form {
+    h3 {
+      color: $yellow-color;
+    }
+    .btn-contact{      
+      background-color: $yellow-color;      
+    }
+  }
+  @media (min-width: 992px) {
+    header {    
+      > div {
+        nav {
+          .nav-list {
+            li {
+              a{
+                &:hover{
+                  color: $yellow-color !important;  
+                }
+              }
+              &.sub-menu {
+                .sub-menu-list {
+                  .sub-menu.open {
+                    >a{
+                      color: $yellow-color;
+                    }
+                    .sub-wrap {
+                      &::after {                      
+                        background-color: $yellow-color;                      
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

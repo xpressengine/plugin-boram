@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Theme - BORAM</title>
+
+    <!-- core -->
+    <link href="../../../../assets/core/common/css/xe-common.css" rel="stylesheet" media="all">
+    <link href="../../../../assets/core/xe-ui-component/xe-ui-component.css" rel="stylesheet" media="all">
+    <link href="http://cdn.jsdelivr.net/xeicon/2.0.0/xeicon.min.css" rel="stylesheet" media="all">
+    <script>var xeBaseURL = '../../../';</script>
+    <script src="../../../../assets/core/common/js/dynamicLoadManager.js"></script>
+    <script src="../../../../assets/jspm_packages/system.js"></script>
+    <script src="../../../../assets/systemjs.config.js"></script>
+    <script src="../../../../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../../../../assets/core/common/js/xe.bundle.js"></script>
+
+    <!-- additional -->
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.css">       
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/layout.js"></script>
+</head>
+<!-- 데스크톱 환경에서는 .desktop 추가 -->
+<!-- 메인스킨, 서브스킨에 따라 각각 .main-skin, .sub-skin -->
+<!-- 컬러셋 기본(블루, 클래스 없음), 레드테마 : .red-theme,  옐로우테마 : yellow-theme -->
+<!-- 서브스킨에서 베너 없는 형태 : .no-banner -->
+<!-- BG 꽉차는 스타일 스킨 : .pull-bg (contact 페이지) -->
+<body class="sub-skin desktop">
+    <p class="skip"><a href="#content">menu skip</a></p>
+    <button class="btn-slide xe-hidden-md xe-hidden-lg" type="button">
+        <span class="xe-sr-only">Toggle nav-listigation</span>
+        <i class="xi-bars"></i>
+    </button>
+    <!-- 2depth가 열려 있는 페이지의 경우 header.depth-fixed li.sub-menu.open-fixed-->
+    <header>
+        <button type="button" class="btn-close-header transition"><i class="xi-close-thin"></i><span class="xe-sr-only">header layer 닫기</span></button>
+        <div>
+            <div class="brand-area">
+                <h1><a href="00_index.html" class="link-brand"><img src="../assets/img/brand.png" alt="logo"></a></h1>
+            </div>
+            <nav class="transition">
+                <strong class="xe-sr-only">GNB list</strong>
+                <ul class="nav-list">
+                    <li class="sub-menu">
+                        <a href="#">ABOUT</a>
+                        <div class="sub-wrap">
+                            <div>
+                                <ul class="sub-menu-list">
+                                    <li><a href="#">2depth</a></li>
+                                    <li class="sub-menu">
+                                        <a href="#">2depth(sub)</a>
+                                        <div class="sub-wrap">
+                                            <div>
+                                                <ul class="sub-menu-list">
+                                                    <li><a href="#">3depth</a></li>
+                                                    <li><a href="#">3depth</a></li>
+                                                    <li><a href="#">3depth</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">2depth</a></li>
+                                    <li><a href="#">2depth</a></li>
+                                    <li class="sub-menu">
+                                        <a href="#">2depth(sub)</a>
+                                        <div class="sub-wrap">
+                                            <div>
+                                                <ul class="sub-menu-list">
+                                                    <li><a href="#">3depth</a></li>
+                                                    <li><a href="#">3depth</a></li>
+                                                    <li><a href="#">3depth</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="01_sub.html">사업분야</a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">홍보센터</a>
+                        <div class="sub-wrap">
+                            <div>
+                                <ul class="sub-menu-list">
+                                    <li class="on"><a href="#">1-3-2depth</a></li>
+                                    <li class="sub-menu">
+                                        <a href="#">1-3-2depth(sub)</a>
+                                        <div class="sub-wrap">
+                                            <div>
+                                                <ul class="sub-menu-list">
+                                                    <li><a href="#">3depth</a></li>
+                                                    <li><a href="#">3depth</a></li>
+                                                    <li><a href="#">3depth</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">2depth</a></li>
+                                    <li><a href="#">2depth</a></li>
+                                    <li><a href="#">2depth</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="on">
+                        <a href="02_contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="auth-group">                                        
+                    <!-- 로그인 상태 -->
+                    <ul>
+                        <li class="member-name"><a href="#" title="프로필 바로가기">marob</a></li>
+                        <li><a href="#"><i class="xi-cog"></i><span class="xe-sr-only">config</span></a></li>
+                        <li class="li-block"><a href="#">로그아웃</a></li>
+                    </ul>
+                    
+                    <!-- 로그아웃 상태
+                    <ul>                        
+                        <li class="li-block"><a href="#">로그인</a></li>
+                    </ul> -->                    
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-wrap transition">
+        <div class="sub-banner" style="background-image:url(../assets/img/sub_banner.jpg)">
+            <div class="xe-container">
+                <div>
+                    <h2>사업 분야</h2>
+                    <ul class="breadcrumb">
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">depth2</a></li>
+                        <li class="on">depth3</li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="sub-content xe-container" id="content">
+            <!-- content area -->
+            <!-- /content area -->
+        </div>
+        <div class="footer">
+            <p>Copyright © <a href="http://www.navercorp.com/" target="_blank">NAVER Corp.</a> Supported by D2 Program.</p>
+            <em>MADE BY <a href="http://xpressengine.io/" target="_blank">XE</a></em>
+        </div>
+    </div>
+    </div>
+    <div class="dim"></div>
+    <script>
+    var html = '<div id="markp_test" style="position:fixed;top:100px;right:10%;width:280px;z-index:10000;padding:10px;border:1px solid #000;background-color:skyblue;font-size:12px">'+
+    '<h3 style="font-size:12px;margin-bottom:10px">테마 옵션 확인</h3>'+
+    '<ul style="list-style:none;margin:0;padding:0">'+
+    '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'red-theme\')">red-theme</button></li>'+
+    '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'yellow-theme\')">yellow-theme</button></li>'+            
+    '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'default-theme\')">default-theme</button></li>'+
+    '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'no-banner\')">no-banner</button></li>'+
+    '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'default-banner\')">default-banner</button></li>'+
+    '</ul>'+
+    '<a href="#" onclick="jQuery(this).parent().hide();return false" style="position:absolute;top:0;right:0;background:#000;color:#fff">닫기</a>'+
+    '</div>'
+    ;
+    jQuery('body').append(html);
+
+    function checkLayerPop(pCheck,pTag) {
+        if(pCheck == "page") {
+            if(pTag == "red-theme") {
+                jQuery('body').removeClass("yellow-theme");
+                jQuery('body').addClass("red-theme");
+            } else if(pTag == "yellow-theme") {
+                jQuery('body').removeClass("red-theme");
+                jQuery('body').addClass("yellow-theme");        
+            }  else if(pTag == "default-theme") {
+                jQuery('body').removeClass("red-theme");
+                jQuery('body').removeClass("yellow-theme");        
+            }  else if(pTag == "no-banner") {
+                jQuery('body').addClass("no-banner");                
+            }  else if(pTag == "default-banner") {
+                jQuery('body').removeClass("no-banner");            
+            }
+        }
+    }
+    </script>
+</body>
+</html>

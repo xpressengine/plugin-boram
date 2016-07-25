@@ -1,0 +1,80 @@
+/*reset*/
+
+header {
+  .brand-area h1 {
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.content {
+  &.welcome h2, &.involve .involve-inner h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.stater-list, 
+.footer p,
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  &.stater .start-guide {
+    dl, dd {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.footer {
+  h3, ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer-copy p, .footer .footer-text, .content.support .xe-col-md-4 .support-txt .table-txt dl, .snb ul, .plugin-area ul, .item-slide-text p{
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  &.welcome .link-info, &.involve .involve-inner a {
+    text-decoration: none;
+  }
+}
+
+header a{
+  text-decoration: none;
+}
+
+.footer {
+  .menu-list li a, h3 a, .footer-copy a {
+    text-decoration: none;
+  }
+}
+
+nav .nav-list {
+  text-decoration: none;
+}
+
+.link-brand, .content.support .xe-col-md-4 .support-txt .table-txt a, .sub-container .snb li a ,.footer a, .breadcrumb a{
+  text-decoration: none;
+}
+
+.stater-list, .footer ul, .snb li, .plugin-area li,.breadcrumb li {
+  list-style: none;
+}

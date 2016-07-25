@@ -1,0 +1,114 @@
+.xe-grid-no-padding div[class*="col-"]{
+  padding:0 !important;
+}
+.boram-widget-group{
+  position: relative;
+  .boram-widget{
+    min-height: 550px;
+    border-bottom: 1px solid #E3E3E3;
+  }
+  .widget-board-list{
+    .boram-widget{
+      padding: 5px 20px 20px 20px;    
+      color: #101010;
+      font-size: 15px;
+      ul, p{
+        margin: 0;padding: 0;
+        list-style: none;
+      }    
+      .widget-board-header{
+        overflow: hidden;
+        padding: 5px 0;
+        border-bottom: 1px solid #e3e3e3;
+        strong{
+          line-height: 35px;
+        }
+        .xe-btn-link{
+          color: #D7D7D7;
+          font-size: 17px;
+        }
+      }
+      .widget-board-content{
+        padding-top: 24px;
+        li{
+          margin-top: 30px;
+          &:first-child{
+            margin-top: 0;
+          }      
+          >a{
+            display: block;
+            text-decoration: none;            
+            em{
+              font-size: 18px;
+              font-style: normal;
+              color: #333;
+            }
+            &:hover em{
+              color: $default-color;
+            }
+            p{
+              margin: 10px 0;
+              color: #949494;
+            }
+            span{
+              color: #7a7a7a;
+            }
+          }
+        }
+      }        
+    }
+  }
+  .widget-direct-link{
+    .boram-widget{
+      padding: 20px;
+      background: url(../img/widget_bg_img.png) 100% 100% no-repeat;         
+      background-size: 329px 233px;
+      strong{
+        display: block;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 46px;
+        color: $default-color;
+        margin-bottom: 35px;
+      }
+      a{
+        font-size: 18px;
+        color: #868686;
+        text-decoration: none;
+        i{
+          margin-left:9px;
+        }
+      }  
+    }
+    &.v2{
+      background-color: $default-bg-color;
+      .boram-widget{
+        background: url(../img/widget_bg_img2.png) 100% 100% no-repeat;         
+        background-size: 327px 444px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .boram-widget-group{
+    .boram-widget{
+      border-right: 1px solid #E3E3E3;
+      border-bottom: none;
+    }
+    .widget-board-list{
+      .boram-widget{
+        padding: 25px 40px 40px 40px;      
+      }
+    }    
+    .widget-direct-link{      
+      &.v2{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom : 0;
+        height: 100%;      
+      }
+    }      
+  }
+}

@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.boram-contact-form{
+  color: #fff;
+  .contact-title{
+    margin-bottom: 100px;
+    text-align: center;
+    h2{
+      margin:0;
+      font-size: 40px;
+      color: #fff;
+      font-weight: 300;
+    }
+    p{
+      margin: 30px 0 0;
+      font-size: 18px;
+      line-height: 28px;
+      color: #fff;
+    }
+  }
+  h3{
+    margin: 0 0 20px;
+    font-size: 15px;
+    color: $default-color;
+  }
+  .contact-info{    
+    dl{
+      font-size: 15px;
+      dt{
+        margin-bottom: 10px;
+      }
+      dd{
+        margin:0 0 15px;
+        padding-bottom: 15px;
+        border-bottom :1px solid rgba(255, 255, 255, 0.2);
+        line-height: 24px;
+        a{
+          margin-right: 8px;
+          i[class*="xi-"]{
+            color: #fff;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .xe-form-group{
+    margin-bottom: 14px;
+    .xe-form-control{
+      border-radius:0;
+      font-size: 15px;
+      color: #b0b0b0;
+      &.xe-input-lg{
+        height: 40px;
+      }
+    }
+  }
+  .btn-contact{
+    width:100px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: $default-color;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1126px) {
+  .boram-contact-form{
+    .contact-info{
+      float: right;
+      width: 375px;
+      margin-right: 50px;
+    }
+  }
+}
