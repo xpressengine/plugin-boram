@@ -126,7 +126,8 @@ header {
   height: 60px; }
   header .brand-area h1 a {
     color: #42a2c5;
-    font-size: 17px; }
+    font-size: 17px;
+    line-height: 60px; }
     header .brand-area h1 a img {
       max-width: 80px;
       max-height: 30px;
@@ -812,5 +813,3 @@ body.yellow-theme .boram-contact-form .btn-contact {
     float: right;
     width: 375px;
     margin-right: 50px; } }
-
-/*# sourceMappingURL=layout.css.map */
