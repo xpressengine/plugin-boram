@@ -10,7 +10,7 @@
     <link href="../../../../assets/core/common/css/xe-common.css" rel="stylesheet" media="all">
     <link href="../../../../assets/core/xe-ui-component/xe-ui-component.css" rel="stylesheet" media="all">
     <link href="http://cdn.jsdelivr.net/xeicon/2.0.0/xeicon.min.css" rel="stylesheet" media="all">
-    <script>var xeBaseURL = '../../../';</script>
+    <script>var xeBaseURL = '../../../../';</script>
     <script src="../../../../assets/core/common/js/dynamicLoadManager.js"></script>
     <script src="../../../../assets/jspm_packages/system.js"></script>
     <script src="../../../../assets/systemjs.config.js"></script>
@@ -19,7 +19,7 @@
 
     <!-- additional -->
     <link rel="stylesheet" href="../assets/css/layout.css">
-    <link rel="stylesheet" href="../assets/css/owl.carousel.css">       
+    <link rel="stylesheet" href="../assets/css/owl.carousel.css">
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="sample/markup_test.js"></script>
 </head>
@@ -137,18 +137,18 @@
                         <a href="02_contact.html">CONTACT</a>
                     </li>
                 </ul>
-                <div class="auth-group">                                        
+                <div class="auth-group">
                     <!-- 로그인 상태 -->
                     <ul>
                         <li class="member-name"><a href="#" title="프로필 바로가기">marob</a></li>
                         <li><a href="#"><i class="xi-cog"></i><span class="xe-sr-only">config</span></a></li>
                         <li class="li-block"><a href="#">로그아웃</a></li>
                     </ul>
-                    
+
                     <!-- 로그아웃 상태
-                    <ul>                        
+                    <ul>
                         <li class="li-block"><a href="#">로그인</a></li>
-                    </ul> -->                    
+                    </ul> -->
                 </div>
             </nav>
         </div>
@@ -163,11 +163,11 @@
                         <li><a href="#">홈</a></li>
                         <li><a href="#">depth2</a></li>
                         <li class="on">depth3</li>
-                    </ul>                    
+                    </ul>
                 </div>
             </div>
         </div>
-        
+
         <div class="sub-content xe-container" id="content">
             <!-- content area -->
             <!-- /content area -->
@@ -184,7 +184,7 @@
     '<h3 style="font-size:12px;margin-bottom:10px">테마 옵션 확인</h3>'+
     '<ul style="list-style:none;margin:0;padding:0">'+
     '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'red-theme\')">red-theme</button></li>'+
-    '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'yellow-theme\')">yellow-theme</button></li>'+            
+    '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'yellow-theme\')">yellow-theme</button></li>'+
     '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'default-theme\')">default-theme</button></li>'+
     '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'no-banner\')">no-banner</button></li>'+
     '<li style="margin-bottom:2px"><button style="width:100%" onclick="checkLayerPop(\'page\',\'default-banner\')">default-banner</button></li>'+
@@ -201,14 +201,14 @@
                 jQuery('body').addClass("red-theme");
             } else if(pTag == "yellow-theme") {
                 jQuery('body').removeClass("red-theme");
-                jQuery('body').addClass("yellow-theme");        
+                jQuery('body').addClass("yellow-theme");
             }  else if(pTag == "default-theme") {
                 jQuery('body').removeClass("red-theme");
-                jQuery('body').removeClass("yellow-theme");        
+                jQuery('body').removeClass("yellow-theme");
             }  else if(pTag == "no-banner") {
-                jQuery('body').addClass("no-banner");                
+                jQuery('body').addClass("no-banner");
             }  else if(pTag == "default-banner") {
-                jQuery('body').removeClass("no-banner");            
+                jQuery('body').removeClass("no-banner");
             }
         }
     }
