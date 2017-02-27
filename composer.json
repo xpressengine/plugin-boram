@@ -1,0 +1,43 @@
+{
+    "name": "xpressengine-plugin/boram",
+    "description": "This Package is Xpressengine Plugin - Boram Theme.",
+    "keywords": [
+        "xpressengine",
+        "plugin"
+    ],
+    "license": "LGPL-2.1",
+    "version": "1.0.0",
+    "type": "xpressengine-plugin",
+    "support": {
+        "email": "input@your.email"
+    },
+    "authors": [
+        {
+            "name": "input your name",
+            "email": "input@your.email",
+            "homepage": "http://input.your.site",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "xpressengine": {
+            "title": "Boram Theme",
+            "component": {
+                "theme/boram@theme": {
+                    "class": "Xpressengine\\Plugins\\Boram\\Theme\\Theme",
+                    "name": "Boram Theme",
+                    "description": "The Theme supported by Boram plugin."
+                }
+            }
+        }
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Xpressengine\\Plugins\\Boram\\": "src/"
+        },
+        "classmap": [
+            "theme/Theme.php"
+        ]
+    }
+}
