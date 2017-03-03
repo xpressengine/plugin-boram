@@ -15,6 +15,12 @@ return [
             ]
         ],
 
+        'mainMenu' => [
+            '_type' => 'menu',
+            '_section' => '설정',
+            'label' => '메인 메뉴 선택',
+        ],
+
         // 컬러셋
         'colorset' => [
             '_type' => 'select',
@@ -52,6 +58,21 @@ return [
             'description' => '로고 이미지를 등록하세요'
         ],
 
+        //footer 설정
+        'useFooter' => [
+            '_type' => 'select',
+            '_section' => '설정',
+            'label' => '푸터 영역 사용 여부',
+            'options' => [
+                'y' => '사용',
+                'n' => '사용 안함'
+            ]
+        ],
+        'footerCopyright' => [
+            '_type' => 'textarea',
+            '_section' => '설정',
+            'label' => '카피라이트',
+        ],
 
         /* Main 페이지 */
         //top slider
@@ -170,6 +191,11 @@ return [
         ],
 
         /* Contact 페이지 설정 */
+        'useContact' => [
+            '_type' => 'select',
+            '_section' => 'Contact 페이지',
+            'label' => 'Contact 페이지 사용유무',
+        ],
         'contactTitle' => [
             '_type' => 'langText',
             '_section' => 'Contact 페이지',
@@ -214,12 +240,13 @@ return [
     'gnb' => [
         
     ],
-    'support' => [
-        'mobile' => true,
-        'desktop' => true
-    ],
     'editable' => [
         'theme.blade.php',
-        'gnb.blade.php'
+        'main.blade.php',
+        'sub.blade.php',
+        'gnb.blade.php',
+        'footer.blade.php',
+        'frame.blade.php',
+        'contact.blade.php',
     ]
 ];

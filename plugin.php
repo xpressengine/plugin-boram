@@ -16,8 +16,15 @@ class Plugin extends AbstractPlugin
      */
     public function boot()
     {
-        // implement code
-
+        $this->route();
     }
-    
+
+    public function route()
+    {
+        Route::fixed($this->getId(), function(){
+            Route::group(['namespace' => 'Xpressengine\Plugins\Boram\Controllers'], function() {
+                Route::post('/send', ['as' => 'send', 'uses' => 'ContactController@send']);
+            });
+        });
+    }
 }

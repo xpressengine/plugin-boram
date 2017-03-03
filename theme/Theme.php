@@ -11,10 +11,18 @@ class Theme extends GenericTheme
 
     public function renderSetting(ConfigEntity $config = null)
     {
-        //XeFrontend
-        
         XeFrontend::js(static::asset('js/settings.js'))->load();
-
+        
         return parent::renderSetting($config);
     }
+    
+//    public function render()
+//    {
+//        XeFrontend::js(static::asset([
+//            'css/layout.css',
+//            'css/owl.carousel.css'
+//        ]))->load();
+//
+//        return parent::render();
+//    }
 }
