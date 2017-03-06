@@ -16,16 +16,26 @@
 			cache: function() {
 				this.$layout = $('select[name=layout]');
 				this.$logoSetting = $('select[name=logoSetting]');
+				this.$useFooter = $('select[name=useFooter]');
+				this.$useTopSlide = $('select[name=useTopSlide]');
+				this.$useBottomSlide = $('select[name=useBottomSlide]');
+
 				this.$logoImageWrap = $('.form-col-logoImage');
 				this.$logoTextWrap = $('.form-col-logoText');
 			},
 			bindEvents: function() {
 				this.$layout.on('change', this.handleLayoutPanel);
 				this.$logoSetting.on('change', this.handleLogoField);
+				this.$useFooter.on('change', this.handleFooter);
+				this.$useTopSlide.on('change', this.handleTopSlide);
+				this.$useBottomSlide.on('change', this.handleBottomSlide);
 			},
 			setting: function() {
 				this.$layout.trigger('change');
 				this.$logoSetting.trigger('change');
+				this.$useFooter.trigger('change');
+				this.$useTopSlide.trigger('change');
+				this.$useBottomSlide.trigger('change');
 			},
 			handleLayoutPanel: function() {
 				var $this = $(this);
@@ -68,6 +78,45 @@
 					default:
 						self.$logoTextWrap.hide();
 						self.$logoImageWrap.hide();
+				}
+			},
+			handleFooter: function() {
+				var $this = $(this);
+
+				switch($this.find('option:selected').val()) {
+					case 'y':
+						$('.form-col-footerCopyright').show();
+						break;
+
+					case 'n':
+						$('.form-col-footerCopyright').hide();
+						break;
+				}
+			},
+			handleTopSlide: function() {
+				var $this = $(this);
+
+				switch($this.find('option:selected').val()) {
+					case 'y':
+						$('[class*=form-col-slide]').not('[class*=form-col-slideBottom]').show();
+						break;
+
+					case 'n':
+						$('[class*=form-col-slide]').not('[class*=form-col-slideBottom]').hide();
+						break;
+				}
+			},
+			handleBottomSlide: function() {
+				var $this = $(this);
+
+				switch($this.find('option:selected').val()) {
+					case 'y':
+						$('[class*=form-col-slideBottom]').show();
+						break;
+
+					case 'n':
+						$('[class*=form-col-slideBottom]').hide();
+						break;
 				}
 			}
 		}

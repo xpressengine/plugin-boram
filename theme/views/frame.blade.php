@@ -16,7 +16,7 @@
                     @if($config->get('logoSetting') == 'image' && $config->get('logoImage.path'))
                         <img src="{{ $config->get('logoImage.path') }}" alt="{{ xe_trans($config->get('logoText', '')) }}" />
                     @else
-                        {{ $config->get('logoText') }}
+                        {{ xe_trans($config->get('logoText')) }}
                     @endif
                 </a>
             </h1>

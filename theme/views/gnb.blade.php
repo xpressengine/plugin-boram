@@ -1,12 +1,3 @@
-<div>
-
-
-
-
-    @foreach(current_menu()->getBreadcrumbs() as $item)
-        <a href="{{ url($item['url']) }}">{{ $item['link'] }}</a>
-    @endforeach
-</div>
 <strong class="xe-sr-only">GNB list</strong>
 <ul class="nav-list">
     @foreach(menu_list($config->get('mainMenu')) as $menu)

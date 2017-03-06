@@ -1,3 +1,4 @@
+@if($config->get('useTopSlide') == 'y')
 <div class="spot-area">
     <div class="owl-spot owl-slider">
         @if ($config->get('slide1Image.path'))
@@ -32,6 +33,7 @@
         @endif
     </div>
 </div>
+@endif
 
 <div class="main-content">
 
@@ -39,30 +41,38 @@
         {!! $content !!}
     </div>
 
+    @if($config->get('useBottomSlide') == 'y')
     <div class="owl-bottom owl-slider">
+        @if($config->get('slideBottom1Image.path'))
         <div class="item">
             <div class="item-slide">
                 <div class="item-slide-text" style="background-image:url({{$config->get('slideBottom1Image.path')}})">
-                    <strong>{{ $config->get('slideBottom1Title') }}</strong>
-                    <p>{{ $config->get('slideBottom1Subtitle') }}</p>
+                    <strong>{{ xe_trans($config->get('slideBottom1Title')) }}</strong>
+                    <p>{{ xe_trans($config->get('slideBottom1Subtitle')) }}</p>
                 </div>
             </div>
         </div>
+        @endif
+        @if($config->get('slideBottom2Image.path'))
         <div class="item">
             <div class="item-slide">
                 <div class="item-slide-text" style="background-image:url({{$config->get('slideBottom2Image.path')}})">
-                    <strong>{{ $config->get('slideBottom2Title') }}</strong>
-                    <p>{{ $config->get('slideBottom2Subtitle') }}</p>
+                    <strong>{{ xe_trans($config->get('slideBottom2Title')) }}</strong>
+                    <p>{{ xe_trans($config->get('slideBottom2Subtitle')) }}</p>
                 </div>
             </div>
         </div>
+        @endif
+        @if($config->get('slideBottom3Image.path'))
         <div class="item">
             <div class="item-slide">
                 <div class="item-slide-text" style="background-image:url({{$config->get('slideBottom3Image.path')}})">
-                    <strong>{{ $config->get('slideBottom3Title') }}</strong>
-                    <p>{{ $config->get('slideBottom3Subtitle') }}</p>
+                    <strong>{{ xe_trans($config->get('slideBottom3Title')) }}</strong>
+                    <p>{{ xe_trans($config->get('slideBottom3Subtitle')) }}</p>
                 </div>
             </div>
         </div>
+        @endif
     </div>
+    @endif
 </div>

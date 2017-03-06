@@ -76,6 +76,15 @@ return [
 
         /* Main 페이지 */
         //top slider
+        'useTopSlide' => [
+            '_type' => 'select',
+            '_section' => 'Main 페이지',
+            'label' => '상단 슬라이드 사용 유무',
+            'options' => [
+                'y' => '사용',
+                'n' => '사용 안함'
+            ]
+        ],
         'slide1Image' => [
             '_type' => 'image',
             '_section' => 'Main 페이지',
@@ -123,6 +132,15 @@ return [
         ],
 
         //bottom slider
+        'useBottomSlide' => [
+            '_type' => 'select',
+            '_section' => 'Main 페이지',
+            'label' => '하단 슬라이드 사용 유무',
+            'options' => [
+                'y' => '사용',
+                'n' => '사용 안함'
+            ]
+        ],
         'slideBottom1Image' => [
             '_type' => 'image',
             '_section' => 'Main 페이지',
