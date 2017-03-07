@@ -30,8 +30,12 @@
 
 <div class="main-wrap transition">
     <!-- main, sub, contact -->
-    @include($theme::view($config->get('layout')))
-
+    <div class="__boram_common_wrap">
+        @include($theme::view($config->get('layout')))
+    </div>
+    <div class="__boram_contact_wrap" style="display: none">
+        @include($theme::view('contact'))
+    </div>
     <!-- footer -->
     @include($theme::view('footer'))
 </div>

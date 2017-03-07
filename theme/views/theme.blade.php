@@ -17,6 +17,12 @@
     $theme::asset('js/theme.boram.js'),
 ])->load() }}
 
+@if($config->get('useContact') == 'y')
+    {{ app('xe.frontend')->js([
+        $theme::asset('js/main.js'),
+    ])->load() }}
+@endif
+
 @if($config->get('layout') == 'main')
     {{ app('xe.frontend')->js([
         $theme::asset('js/main.js'),

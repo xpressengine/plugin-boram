@@ -11,7 +11,6 @@ return [
             'options' => [
                 'main' => 'Main 페이지용',
                 'sub' => 'Sub 페이지용',
-                'contact' => 'Contact 페이지용',
             ]
         ],
 
@@ -213,6 +212,15 @@ return [
             '_type' => 'select',
             '_section' => 'Contact 페이지',
             'label' => 'Contact 페이지 사용유무',
+            'options' => [
+                'y' => '사용',
+                'n' => '사용 안함'
+            ]
+        ],
+        'contactBackgroundImage' => [
+            '_type' => 'image',
+            '_section' => 'Contact 페이지',
+            'label' => '백그라운드 이미지',
         ],
         'contactTitle' => [
             '_type' => 'langText',
@@ -234,13 +242,18 @@ return [
             '_section' => 'Contact 페이지',
             'label' => '주소',
         ],
+        'contactTel' => [
+            '_type' => 'text',
+            '_section' => 'Contact 페이지',
+            'label' => 'Tel',
+        ],
         'contactCompanyEmail' => [
-            '_type' => 'langText',
+            '_type' => 'text',
             '_section' => 'Contact 페이지',
             'label' => 'E-mail',
         ],
-        'contactCompanyEmail' => [
-            '_type' => 'langText',
+        'contactCompanyFax' => [
+            '_type' => 'text',
             '_section' => 'Contact 페이지',
             'label' => 'Fax',
         ],

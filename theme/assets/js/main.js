@@ -30,4 +30,5 @@ $(function() {
 	}, function(){
 		$('.owl-nav').animate({opacity:0},250);
 	});
+
 });

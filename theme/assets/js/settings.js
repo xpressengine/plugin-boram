@@ -44,18 +44,13 @@
 
 				switch(layout) {
 					case 'main':
-						$siblingsPanel.not(':eq(0)').hide();
+						$siblingsPanel.eq(1).hide();
 						$siblingsPanel.eq(0).show();
 						break;
 
 					case 'sub':
-						$siblingsPanel.not(':eq(1)').hide();
+						$siblingsPanel.eq(0).hide();
 						$siblingsPanel.eq(1).show();
-						break;
-
-					case 'contact':
-						$siblingsPanel.not(':eq(2)').hide();
-						$siblingsPanel.eq(2).show();
 						break;
 
 					default:

@@ -88,4 +88,20 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+	$('#__boram_contact').on('click', function(e) {
+		e.preventDefault();
+
+		$('.__boram_common_wrap').hide();
+		$('.__boram_contact_wrap').show();
+
+		if($(this).data('image')) {
+			$('.main-wrap').css({'background-image': 'url("' + $(this).data('image') + '")'})
+			$('body').addClass('no-banner pull-bg');
+		}
+	});
+
+	$('.__btnBoramContactSubmit').on('click', function() {
+		
+	});
 })

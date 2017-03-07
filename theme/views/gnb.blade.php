@@ -35,6 +35,14 @@
             @endif
         </li>
     @endforeach
+
+    @if($config->get('useContact') == 'y')
+    <li>
+        <a href="#" id="__boram_contact" data-image="{{ $config->get('contactBackgroundImage.path') }}">
+            Contact
+        </a>
+    </li>
+    @endif
 </ul>
 <div class="auth-group">
     <!-- 로그인 상태 -->
