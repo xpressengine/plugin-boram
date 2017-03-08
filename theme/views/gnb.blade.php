@@ -36,9 +36,9 @@
         </li>
     @endforeach
 
-    @if($config->get('useContact') == 'y')
+    @if($contactConfig->get('useContact') == 'y')
     <li>
-        <a href="#" id="__boram_contact" data-image="{{ $config->get('contactBackgroundImage.path') }}">
+        <a href="#" id="__boram_contact" data-image="{{ $contactConfig->get('contactBackgroundImage.path') }}">
             Contact
         </a>
     </li>

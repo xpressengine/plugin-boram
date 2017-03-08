@@ -17,16 +17,52 @@ class Plugin extends AbstractPlugin
     public function boot()
     {
         $this->route();
+
+        $this->registerSettingsMenu();
     }
 
     public function route()
     {
         Route::fixed($this->getId(), function(){
             Route::group(['namespace' => 'Xpressengine\Plugins\Boram\Controllers'], function() {
-                Route::post('/sendEmail', ['as' => 'boarm::sendEmail', 'uses' => 'ContactController@sendEmail']);
+                //contact 전송
+                Route::post('/send', ['as' => 'boarm::sendEmail', 'uses' => 'ContactController@send']);
 
+                //contact view
                 Route::get('/contact', ['as' => 'boram::contact', 'uses' => 'ContactController@show']);
             });
         });
+
+        Route::settings('plugin/boram', function(){
+            Route::group(['namespace' => 'Xpressengine\Plugins\Boram\Controllers'], function() {
+                //컨텐츠 메뉴 settings view
+                Route::get('/settings', [
+                    'as' => 'boram::settings',
+                    'uses' => 'SettingsContentsController@settings',
+                    'settings_menu' => 'contents.contact'
+                ]);
+
+                //컨텐츠 메뉴 -> contact 설정 저장
+                Route::post('/store', [
+                    'as' => 'boram::settings.contact.store',
+                    'uses' => 'SettingsContentsController@store',
+                ]);
+            });
+        });
+    }
+
+    public function getSettingsURI()
+    {
+        return route('boram::settings');
+    }
+
+    protected function registerSettingsMenu()
+    {
+        \XeRegister::push('settings/menu', 'contents.contact', [
+            'title' => 'Contact 설정',
+            'display' => true,
+            'description' => 'Contact 설정',
+            'ordering' => 5000  // 정렬 순서
+        ]);
     }
 }
