@@ -30,12 +30,12 @@
 
 <div class="main-wrap transition">
     <!-- main, sub, contact -->
-    <div class="__boram_common_wrap">
+    @if($config->get('layout') === 'main' || $config->get('layout') === 'sub')
         @include($theme::view($config->get('layout')))
-    </div>
-    <div class="__boram_contact_wrap" style="display: none">
-        @include($theme::view('contact'))
-    </div>
+    @else
+        {!! $content !!}
+    @endif
+
     <!-- footer -->
     @include($theme::view('footer'))
 </div>

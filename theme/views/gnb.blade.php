@@ -38,7 +38,7 @@
 
     @if($contactConfig->get('useContact') == 'y')
     <li>
-        <a href="#" id="__boram_contact" data-image="{{ $contactConfig->get('contactBackgroundImage.path') }}">
+        <a href="{{ route('boram::contact') }}">
             Contact
         </a>
     </li>

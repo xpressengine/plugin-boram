@@ -8,6 +8,8 @@
         <form action="{{ route('boram::settings.contact.store') }}" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
+            {!! uio('themeSelect', ['selectedTheme' => ['desktop'=>$config->get('theme_desktop'), 'mobile'=>$config->get('theme_mobile')]]) !!}
+
             {{ uio('form', [
                 'fields' => [
                     'useContact' => [

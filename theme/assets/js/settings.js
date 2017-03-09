@@ -53,6 +53,10 @@
 						$siblingsPanel.eq(1).show();
 						break;
 
+					case 'contact':
+						$siblingsPanel.hide();
+						break;
+
 					default:
 				}
 			},

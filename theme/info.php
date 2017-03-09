@@ -11,6 +11,7 @@ return [
             'options' => [
                 'main' => 'Main 페이지용',
                 'sub' => 'Sub 페이지용',
+                'contact' => 'Contact 페이지용',
             ]
         ],
 
@@ -205,67 +206,6 @@ return [
             '_type' => 'langText',
             '_section' => 'Sub 페이지',
             'label' => '상단 타이틀',
-        ],
-
-        /* Contact 페이지 설정 */
-        'useContact' => [
-            '_type' => 'select',
-            '_section' => 'Contact 페이지',
-            'label' => 'Contact 페이지 사용유무',
-            'options' => [
-                'y' => '사용',
-                'n' => '사용 안함'
-            ]
-        ],
-        'contactBackgroundImage' => [
-            '_type' => 'image',
-            '_section' => 'Contact 페이지',
-            'label' => '백그라운드 이미지',
-        ],
-        'contactTitle' => [
-            '_type' => 'langText',
-            '_section' => 'Contact 페이지',
-            'label' => '상단 타이틀',    
-        ],
-        'contactSubTitle' => [
-            '_type' => 'langTextarea',
-            '_section' => 'Contact 페이지',
-            'label' => '상단 내용',
-        ],
-        'contactCompanyName' => [
-            '_type' => 'langText',
-            '_section' => 'Contact 페이지',
-            'label' => '상호명',
-        ],
-        'contactCompanyAddress' => [
-            '_type' => 'langText',
-            '_section' => 'Contact 페이지',
-            'label' => '주소',
-        ],
-        'contactTel' => [
-            '_type' => 'text',
-            '_section' => 'Contact 페이지',
-            'label' => 'Tel',
-        ],
-        'contactCompanyEmail' => [
-            '_type' => 'text',
-            '_section' => 'Contact 페이지',
-            'label' => 'E-mail',
-        ],
-        'contactCompanyFax' => [
-            '_type' => 'text',
-            '_section' => 'Contact 페이지',
-            'label' => 'Fax',
-        ],
-        'contactCompanyBusinessHours' => [
-            '_type' => 'langText',
-            '_section' => 'Contact 페이지',
-            'label' => 'Business Hours',
-        ],
-        'contactSocial' => [
-            '_type' => 'text',
-            '_section' => 'Contact 페이지',
-            'label' => 'Facebook URL',
         ],
     ],
     'gnb' => [

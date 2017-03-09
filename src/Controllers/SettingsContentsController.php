@@ -34,6 +34,8 @@ class SettingsContentsController extends Controller
         $contactCompanyFax = $request -> get('contactCompanyFax');
         $contactCompanyBusinessHours = $request -> get('contactCompanyBusinessHours');
         $contactSocial = $request -> get('contactSocial');
+        $theme_desktop = $request -> get('theme_desktop');
+        $theme_mobile = $request -> get('theme_mobile');
 
         $config = XeConfig::get('plugin.theme_boram_contact');
 
@@ -54,6 +56,8 @@ class SettingsContentsController extends Controller
                 'contactCompanyFax' => $contactCompanyFax,
                 'contactCompanyBusinessHours' => $contactCompanyBusinessHours,
                 'contactSocial' => $contactSocial,
+                'theme_desktop' => $theme_desktop,
+                'theme_mobile' => $theme_mobile
             ]);
 
         } else {
@@ -69,6 +73,8 @@ class SettingsContentsController extends Controller
                 'contactCompanyFax' => $contactCompanyFax,
                 'contactCompanyBusinessHours' => $contactCompanyBusinessHours,
                 'contactSocial' => $contactSocial,
+                'theme_desktop' => $theme_desktop,
+                'theme_mobile' => $theme_mobile
             ]);
             
         }

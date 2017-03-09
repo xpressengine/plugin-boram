@@ -24,12 +24,18 @@ class ContactController extends Controller
 
     }
 
-    public function show()
+    public function show(Request $request)
     {
-//        \XeTheme::selectTheme('theme/boram@theme.3');
-        $config = \XeConfig::getOrNew('plugin.theme_boram_contact');
-        \XeTheme::selectTheme($config);
+        $contactConfig = \XeConfig::getOrNew('plugin.theme_boram_contact');
+        $selectedTheme = ($request->isMobile())? $contactConfig->get('theme_mobile') : $contactConfig->get('theme_desktop');
 
-        return \XePresenter::make(Theme::view('contact'));
+        \XeTheme::selectTheme($selectedTheme);
+
+        app('xe.frontend')->bodyClass('no-banner');
+        app('xe.frontend')->bodyClass('pull-bg');
+
+        \XeFrontend::js(theme::asset('js/contact.js'))->load();
+
+        return \XePresenter::make('boram::views.contact', [ 'contactConfig' => $contactConfig ]);
     }
 }
