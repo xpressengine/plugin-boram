@@ -88,7 +88,7 @@ body.red-theme {
           }
         }
       }
-    } 
+    }
     .widget-direct-link {
       .boram-widget {
         strong {
@@ -104,19 +104,19 @@ body.red-theme {
     h3 {
       color: $red-color;
     }
-    .btn-contact{      
-      background-color: $red-color;      
+    .btn-contact{
+      background-color: $red-color;
     }
   }
   @media (min-width: 992px) {
-    header {    
+    header {
       > div {
         nav {
           .nav-list {
             li {
               a{
                 &:hover{
-                  color: $red-color !important;  
+                  color: $red-color !important;
                 }
               }
               &.sub-menu {
@@ -126,8 +126,8 @@ body.red-theme {
                       color: $red-color;
                     }
                     .sub-wrap {
-                      &::after {                      
-                        background-color: $red-color;                      
+                      &::after {
+                        background-color: $red-color;
                       }
                     }
                   }
@@ -170,7 +170,7 @@ body.yellow-theme {
               }
             }
             &.sub-menu {
-              > .sub-wrap {                
+              > .sub-wrap {
                 @include transparent-backgound($yellow-bg-color, 0.8);
               }
             }
@@ -230,7 +230,7 @@ body.yellow-theme {
           }
         }
       }
-    } 
+    }
     .widget-direct-link {
       .boram-widget {
         strong {
@@ -246,19 +246,19 @@ body.yellow-theme {
     h3 {
       color: $yellow-color;
     }
-    .btn-contact{      
-      background-color: $yellow-color;      
+    .btn-contact{
+      background-color: $yellow-color;
     }
   }
   @media (min-width: 992px) {
-    header {    
+    header {
       > div {
         nav {
           .nav-list {
             li {
               a{
                 &:hover{
-                  color: $yellow-color !important;  
+                  color: $yellow-color !important;
                 }
               }
               &.sub-menu {
@@ -268,8 +268,8 @@ body.yellow-theme {
                       color: $yellow-color;
                     }
                     .sub-wrap {
-                      &::after {                      
-                        background-color: $yellow-color;                      
+                      &::after {
+                        background-color: $yellow-color;
                       }
                     }
                   }

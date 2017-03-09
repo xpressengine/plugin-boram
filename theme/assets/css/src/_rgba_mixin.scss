@@ -2,5 +2,5 @@
   $start: "rgb(";
   $end: ")";
   background-color: #{$start}red($color), green($color), blue($color)#{$end};
-  background-color: rgba($color, $value);  
+  background-color: rgba($color, $value);
 }
