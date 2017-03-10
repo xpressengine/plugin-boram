@@ -4,12 +4,14 @@
         <div>
             <h2>{{ xe_trans($config->get('subHeaderTitle')) }}</h2>
 
+            @if($m = current_menu())
             <ul class="breadcrumb">
                 <!-- li.on에 관련된 css없음 -->
-                @foreach(current_menu()->getBreadcrumbs() as $item)
+                @foreach($m->getBreadcrumbs() as $item)
                     <li><a href="{{ url($item['url']) }}">{{ $item['link'] }}</a></li>
                 @endforeach
             </ul>
+            @endif
         </div>
     </div>
 </div>

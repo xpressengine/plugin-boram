@@ -32,11 +32,11 @@
                         '_type' => 'langTextarea',
                         'label' => '상단 내용',
                     ],
-                    'contactCompanyName' => [
+                    'contactName' => [
                         '_type' => 'langText',
                         'label' => '상호명',
                     ],
-                    'contactCompanyAddress' => [
+                    'contactAddress' => [
                         '_type' => 'langText',
                         'label' => '주소',
                     ],
@@ -44,21 +44,33 @@
                         '_type' => 'text',
                         'label' => 'Tel',
                     ],
-                    'contactCompanyEmail' => [
+                    'contactEmail' => [
                         '_type' => 'text',
                         'label' => 'E-mail',
                     ],
-                    'contactCompanyFax' => [
+                    'contactFax' => [
                         '_type' => 'text',
                         'label' => 'Fax',
                     ],
-                    'contactCompanyBusinessHours' => [
+                    'contactBusinessHours' => [
                         '_type' => 'langText',
                         'label' => 'Business Hours',
                     ],
                     'contactSocial' => [
                         '_type' => 'text',
                         'label' => 'Facebook URL',
+                    ],
+                    'successMessage' => [
+                        '_type' => 'langText',
+                        'label' => '메일전송 성공 메시지',
+                    ],
+                    'emailFormHeader' => [
+                        '_type' => 'langTextarea',
+                        'label' => 'email 전송 양식 헤더',
+                    ],
+                    'emailFormFooter' => [
+                        '_type' => 'langTextarea',
+                        'label' => 'email 전송 양식 푸터',
                     ]
                 ],
                 'value' => [
@@ -66,13 +78,16 @@
                     'contactBackgroundImage' => $config->get('contactBackgroundImage'),
                     'contactTitle' => $config->get('contactTitle'),
                     'contactSubTitle' => $config->get('contactSubTitle'),
-                    'contactCompanyName' => $config->get('contactCompanyName'),
-                    'contactCompanyAddress' => $config->get('contactCompanyAddress'),
+                    'contactName' => $config->get('contactName'),
+                    'contactAddress' => $config->get('contactAddress'),
                     'contactTel' => $config->get('contactTel'),
-                    'contactCompanyEmail' => $config->get('contactCompanyEmail'),
-                    'contactCompanyFax' => $config->get('contactCompanyFax'),
-                    'contactCompanyBusinessHours' => $config->get('contactCompanyBusinessHours'),
+                    'contactEmail' => $config->get('contactEmail'),
+                    'contactFax' => $config->get('contactFax'),
+                    'contactBusinessHours' => $config->get('contactBusinessHours'),
                     'contactSocial' => $config->get('contactSocial'),
+                    'successMessage' => $config->get('successMessage'),
+                    'emailFormHeader' => $config->get('emailFormHeader'),
+                    'emailFormFooter' => $config->get('emailFormFooter'),
                 ]
             ]) }}
             <div class="clearfix">

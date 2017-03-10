@@ -23,6 +23,15 @@ $(function() {
 		return true;
 	};
 
+	var initContactForm = function() {
+		var $form = $('#__frmBoramContact');
+
+		$form.find('[name=name]').val('');
+		$form.find('[name=email]').val('');
+		$form.find('[name=title]').val('');
+		$form.find('[name=content]').val('');
+	};
+
 	$('.__btnBoramContactSubmit').on('click', function(e) {
 		var $form = $(this).parents('form');
 
@@ -30,4 +39,18 @@ $(function() {
 			$form.submit();
 		}
 	});
+
+	window.contactCallback = function(res) {
+
+		if(res.error) {
+			XE.toast('warning', res.message);
+
+		} else {
+			XE.toast('info', res.message);
+			initContactForm();
+
+		}
+
+	}
 });
+

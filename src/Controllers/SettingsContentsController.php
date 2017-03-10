@@ -27,15 +27,18 @@ class SettingsContentsController extends Controller
         $contactBackgroundImage = $request -> file('contactBackgroundImage');
         $contactTitle = $request -> get('contactTitle');
         $contactSubTitle = $request -> get('contactSubTitle');
-        $contactCompanyName = $request -> get('contactCompanyName');
-        $contactCompanyAddress = $request -> get('contactCompanyAddress');
+        $contactName = $request -> get('contactName');
+        $contactAddress = $request -> get('contactAddress');
         $contactTel = $request -> get('contactTel');
-        $contactCompanyEmail = $request -> get('contactCompanyEmail');
-        $contactCompanyFax = $request -> get('contactCompanyFax');
-        $contactCompanyBusinessHours = $request -> get('contactCompanyBusinessHours');
+        $contactEmail = $request -> get('contactEmail');
+        $contactFax = $request -> get('contactFax');
+        $contactBusinessHours = $request -> get('contactBusinessHours');
         $contactSocial = $request -> get('contactSocial');
         $theme_desktop = $request -> get('theme_desktop');
         $theme_mobile = $request -> get('theme_mobile');
+        $successMessage = $request -> get('successMessage');
+        $emailFormHeader = $request -> get('emailFormHeader');
+        $emailFormFooter = $request -> get('emailFormFooter');
 
         $config = XeConfig::get('plugin.theme_boram_contact');
 
@@ -49,15 +52,18 @@ class SettingsContentsController extends Controller
                 'contactBackgroundImage' => $contactBackgroundImage,
                 'contactTitle' => $contactTitle, 
                 'contactSubTitle' => $contactSubTitle,
-                'contactCompanyName' => $contactCompanyName,
-                'contactCompanyAddress' => $contactCompanyAddress,
+                'contactName' => $contactName,
+                'contactAddress' => $contactAddress,
                 'contactTel' => $contactTel,
-                'contactCompanyEmail' => $contactCompanyEmail,
-                'contactCompanyFax' => $contactCompanyFax,
-                'contactCompanyBusinessHours' => $contactCompanyBusinessHours,
+                'contactEmail' => $contactEmail,
+                'contactFax' => $contactFax,
+                'contactBusinessHours' => $contactBusinessHours,
                 'contactSocial' => $contactSocial,
                 'theme_desktop' => $theme_desktop,
-                'theme_mobile' => $theme_mobile
+                'theme_mobile' => $theme_mobile,
+                'successMessage' => $successMessage,
+                'emailFormHeader' => $emailFormHeader,
+                'emailFormFooter' => $emailFormFooter,
             ]);
 
         } else {
@@ -66,15 +72,18 @@ class SettingsContentsController extends Controller
                 'contactBackgroundImage' => $contactBackgroundImage,
                 'contactTitle' => $contactTitle,
                 'contactSubTitle' => $contactSubTitle,
-                'contactCompanyName' => $contactCompanyName,
-                'contactCompanyAddress' => $contactCompanyAddress,
+                'contactName' => $contactName,
+                'contactAddress' => $contactAddress,
                 'contactTel' => $contactTel,
-                'contactCompanyEmail' => $contactCompanyEmail,
-                'contactCompanyFax' => $contactCompanyFax,
-                'contactCompanyBusinessHours' => $contactCompanyBusinessHours,
+                'contactEmail' => $contactEmail,
+                'contactFax' => $contactFax,
+                'contactBusinessHours' => $contactBusinessHours,
                 'contactSocial' => $contactSocial,
                 'theme_desktop' => $theme_desktop,
-                'theme_mobile' => $theme_mobile
+                'theme_mobile' => $theme_mobile,
+                'successMessage' => $successMessage,
+                'emailFormHeader' => $emailFormHeader,
+                'emailFormFooter' => $emailFormFooter,
             ]);
             
         }
