@@ -15,7 +15,7 @@
                     </tr>
                     <tr>
                         <td style="text-align:center">
-                            {!! $config->get('contactFormHeader') !!}
+                            {!! $emailFormHeader !!}
                         </td>
                     </tr>
                     <tr>
@@ -69,7 +69,7 @@
                     </tr>
                     <tr>
                         <td style="font-family:NanumBarunGothic,'나눔고딕',NanumGothic,dotum,'돋움',Helvetica;color:#8e8e93;font-size:13px;text-align:center;line-height:13px;">
-                            {!! $config->get('contactFormFooter') !!}
+                            {!! $emailFormFooter !!}
                         </td>
                     </tr>
                     <tr>

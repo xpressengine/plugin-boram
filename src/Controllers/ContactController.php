@@ -28,7 +28,8 @@ class ContactController extends Controller
         $data = [
             'title' => $title,
             'contents' => $content,
-            'config' => $contactConfig
+            'emailFormHeader' => xe_trans($contactConfig->get('emailFormHeader')),
+            'emailFormFooter' => xe_trans($contactConfig->get('emailFormFooter'))
         ];
 
         $fields = [
@@ -50,6 +51,7 @@ class ContactController extends Controller
                 $m->from($email, $name);
                 $m->to($contactConfig->get('contactEmail'));
                 $m->subject($title);
+
             });
 
             $response = [

@@ -32,15 +32,17 @@ $(function() {
 		$form.find('[name=content]').val('');
 	};
 
-	$('.__btnBoramContactSubmit').on('click', function(e) {
+		$('.__btnBoramContactSubmit').on('click', function(e) {
 		var $form = $(this).parents('form');
 
 		if(isValidForm($form)) {
+			$('.dim').show();
 			$form.submit();
 		}
 	});
 
 	window.contactCallback = function(res) {
+		$('.dim').hide();
 
 		if(res.error) {
 			XE.toast('warning', res.message);
