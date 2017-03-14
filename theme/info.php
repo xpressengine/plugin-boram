@@ -218,6 +218,5 @@ return [
         'gnb.blade.php',
         'footer.blade.php',
         'frame.blade.php',
-        'contact.blade.php',
     ]
 ];
