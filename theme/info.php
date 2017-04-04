@@ -11,7 +11,6 @@ return [
             'options' => [
                 'main' => 'Main 페이지용',
                 'sub' => 'Sub 페이지용',
-                'contact' => 'Contact 페이지용',
             ]
         ],
 
