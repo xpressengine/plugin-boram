@@ -10,13 +10,6 @@ class Theme extends GenericTheme
 {
     protected static $path = 'boram/theme';
 
-    public function renderSetting(ConfigEntity $config = null)
-    {
-        XeFrontend::js(static::asset('js/settings.js'))->load();
-        
-        return parent::renderSetting($config);
-    }
-    
     public function render()
     {
         $config = \XeConfig::getOrNew('plugin.theme_boram_contact');
