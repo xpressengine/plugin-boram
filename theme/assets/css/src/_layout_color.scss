@@ -57,11 +57,9 @@ body.red-theme {
     }
   }
   .owl-slider {
-    .owl-controls {
-      .owl-dot {
-        &.active span {
-          background-color: $red-color;
-        }
+    .owl-dot {
+      &.active span {
+        background-color: $red-color;
       }
     }
     &.owl-bottom {
@@ -74,7 +72,7 @@ body.red-theme {
       }
     }
   }
-  
+
   .boram-widget-group {
     .widget-board-list{
       .boram-widget{
@@ -200,11 +198,9 @@ body.yellow-theme {
     }
   }
   .owl-slider {
-    .owl-controls {
-      .owl-dot {
-        &.active span {
-          background-color: $yellow-color;
-        }
+    .owl-dot {
+      &.active span {
+        background-color: $yellow-color;
       }
     }
     &.owl-bottom {

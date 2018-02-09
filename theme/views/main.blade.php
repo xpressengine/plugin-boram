@@ -1,6 +1,6 @@
 @if($config->get('useTopSlide') == 'y')
 <div class="spot-area">
-    <div class="owl-spot owl-slider">
+    <div class="owl-spot owl-slider owl-carousel">
         @if ($config->get('slide1Image.path'))
             <div class="item">
                 <div class="item-slide" style="background-image:url({{$config->get('slide1Image.path')}})">

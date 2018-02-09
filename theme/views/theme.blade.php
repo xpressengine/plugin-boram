@@ -7,7 +7,7 @@
 
 {{-- stylesheet --}}
 {{ app('xe.frontend')->css([
-    $theme::asset('css/owl.carousel.css'),
+    $theme::asset('css/owl.carousel.min.css'),
     $theme::asset('css/layout.css'),
 ])->load() }}
 

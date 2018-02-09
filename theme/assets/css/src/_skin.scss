@@ -82,7 +82,7 @@ header {
   height: 60px;
   .brand-area{
     h1{
-      
+
       a{
         color: $default-color;
         font-size: 17px;
@@ -343,7 +343,7 @@ header {
       }
     }
   }
-  
+
   .sub-content {
     margin-top: 50px;
     margin-bottom: 80px;
@@ -434,80 +434,78 @@ header {
   .owl-stage {
     padding-left: 0 !important;
   }
-  .owl-controls {
-    .owl-nav {
-      display: none;
-      position: absolute;
-      top: 50%;
-      margin-top: -25px;
-      color: #fff;
-      width: 100%;
-      opacity: 0;
-      .owl-prev,
-      .owl-next {
-        position: relative;
-        float: left;
-        width: 50px;
-        height: 50px;
-        margin-left: 60px;
-        background-color: #F0F2F5;
-        background-color: rgba(255,255,255,0.5);
-        text-indent: -9999px;
-        font-size: 0;
-        &:after {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          width: 16px;
-          height: 16px;
-          margin: -8px 0 0 -4px;
-          border-top: 1px solid #000;
-          border-right: 1px solid #000;
-          background-color: transparent;
-          -webkit-transform: rotate(-135deg);
-          -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-          content:"";
-        }
-      }
-      .owl-next {
-        float: right;
-        margin-left: auto;
-        margin-right: 60px;
-        &:after {
-          margin-left: -11px;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-        }
+  .owl-nav {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    color: #fff;
+    width: 100%;
+    opacity: 0;
+    .owl-prev,
+    .owl-next {
+      position: relative;
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin-left: 60px;
+      background-color: #F0F2F5;
+      background-color: rgba(255,255,255,0.5);
+      text-indent: -9999px;
+      font-size: 0;
+      &:after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 16px;
+        height: 16px;
+        margin: -8px 0 0 -4px;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        background-color: transparent;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        content:"";
       }
     }
-    .owl-dots{
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 40px;
-      text-align: center;
+    .owl-next {
+      float: right;
+      margin-left: auto;
+      margin-right: 60px;
+      &:after {
+        margin-left: -11px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
     }
-    .owl-dot {
+  }
+  .owl-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    text-align: center;
+  }
+  .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+    height: 30px;
+    margin: 5px 4px;
+    span {
       display: inline-block;
-      zoom: 1;
-      display: inline;
-      height: 30px;
-      margin: 5px 4px;
-      span {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background-color: #fff;
-        border-radius: 50%;
-        vertical-align: middle;
-      }
-      &.active span {
-        width: 28px;
-        background-color: $default-color;
-        border-radius: 7px;
-      }
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    &.active span {
+      width: 28px;
+      background-color: $default-color;
+      border-radius: 7px;
     }
   }
   &.owl-bottom{
@@ -621,7 +619,7 @@ header {
                 -webkit-transition: all 0.3s ease;
                 transition: all 0.3s ease;
               }
-              
+
               &.open>.sub-wrap,
               &.open-fixed > .sub-wrap{
                 display: block;
@@ -686,7 +684,7 @@ header {
           }
         }
       }
-      
+
       .auth-group{
         margin: 0;
         li a{
@@ -711,16 +709,14 @@ header {
       }
     }
   }
-  
+
   .owl-slider {
-    .owl-controls {
-      .owl-nav {
-        display: block;
-      }
-      .owl-dots{
-        left: 130px;
-        text-align: left;
-      }
+    .owl-nav {
+      display: block;
+    }
+    .owl-dots{
+      left: 130px;
+      text-align: left;
     }
     .item-slide {
       height: 700px;
@@ -731,11 +727,11 @@ header {
           font-size: 42px;
           line-height: 59px;
           letter-spacing: -0.025em;
-          
+
         }
       }
     }
-    
+
     &.owl-bottom{
       .item-slide{
         padding: 48px 0;
