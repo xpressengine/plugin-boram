@@ -17,7 +17,7 @@ gulp.task('sass', function() {
   return gulp.src('./theme/assets/css/src/*.scss')
     .pipe($.if(config.useSourceMaps, $.sourcemaps.init()))
     .pipe($.plumber())
-    .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
+    .pipe($.sass({outputStyle: 'compressed'}).on('error', $.sass.logError))
     .pipe($.if(config.useSourceMaps, $.sourcemaps.write(".")))
     .pipe(gulp.dest('./theme/assets/css'));
 });
