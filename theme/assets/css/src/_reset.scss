@@ -5,7 +5,7 @@ header {
     margin: 0;
     padding: 0;
   }
-  ul{
+  ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -13,7 +13,8 @@ header {
 }
 
 .content {
-  &.welcome h2, &.involve .involve-inner h2 {
+  &.welcome h2,
+  &.involve .involve-inner h2 {
     margin: 0;
     padding: 0;
   }
@@ -32,7 +33,8 @@ header {
     padding: 0;
   }
   &.stater .start-guide {
-    dl, dd {
+    dl,
+    dd {
       margin: 0;
       padding: 0;
     }
@@ -40,29 +42,38 @@ header {
 }
 
 .footer {
-  h3, ul {
+  h3,
+  ul {
     margin: 0;
     padding: 0;
   }
 }
 
-.footer-copy p, .footer .footer-text, .content.support .xe-col-md-4 .support-txt .table-txt dl, .snb ul, .plugin-area ul, .item-slide-text p{
+.footer-copy p,
+.footer .footer-text,
+.content.support .xe-col-md-4 .support-txt .table-txt dl,
+.snb ul,
+.plugin-area ul,
+.item-slide-text p {
   margin: 0;
   padding: 0;
 }
 
 .content {
-  &.welcome .link-info, &.involve .involve-inner a {
+  &.welcome .link-info,
+  &.involve .involve-inner a {
     text-decoration: none;
   }
 }
 
-header a{
+header a {
   text-decoration: none;
 }
 
 .footer {
-  .menu-list li a, h3 a, .footer-copy a {
+  .menu-list li a,
+  h3 a,
+  .footer-copy a {
     text-decoration: none;
   }
 }
@@ -71,10 +82,18 @@ nav .nav-list {
   text-decoration: none;
 }
 
-.link-brand, .content.support .xe-col-md-4 .support-txt .table-txt a, .sub-container .snb li a ,.footer a, .breadcrumb a{
+.link-brand,
+.content.support .xe-col-md-4 .support-txt .table-txt a,
+.sub-container .snb li a,
+.footer a,
+.breadcrumb a {
   text-decoration: none;
 }
 
-.stater-list, .footer ul, .snb li, .plugin-area li,.breadcrumb li {
+.stater-list,
+.footer ul,
+.snb li,
+.plugin-area li,
+.breadcrumb li {
   list-style: none;
 }

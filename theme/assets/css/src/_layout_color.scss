@@ -28,7 +28,7 @@ body.red-theme {
             }
             &.sub-menu {
               > .sub-wrap {
-                 @include transparent-backgound($red-bg-color, 0.8);
+                @include transparent-backgound($red-bg-color, 0.8);
               }
             }
           }
@@ -74,12 +74,12 @@ body.red-theme {
   }
 
   .boram-widget-group {
-    .widget-board-list{
-      .boram-widget{
-        .widget-board-content{
-          li{
-            >a{
-              &:hover em{
+    .widget-board-list {
+      .boram-widget {
+        .widget-board-content {
+          li {
+            > a {
+              &:hover em {
                 color: $red-color;
               }
             }
@@ -102,7 +102,7 @@ body.red-theme {
     h3 {
       color: $red-color;
     }
-    .btn-contact{
+    .btn-contact {
       background-color: $red-color;
     }
   }
@@ -112,15 +112,15 @@ body.red-theme {
         nav {
           .nav-list {
             li {
-              a{
-                &:hover{
+              a {
+                &:hover {
                   color: $red-color !important;
                 }
               }
               &.sub-menu {
                 .sub-menu-list {
                   .sub-menu.open {
-                    >a{
+                    > a {
                       color: $red-color;
                     }
                     .sub-wrap {
@@ -163,7 +163,8 @@ body.yellow-theme {
               > a {
                 color: $yellow-color;
                 &::after {
-                  border-color: $yellow-color transparent transparent transparent;
+                  border-color: $yellow-color transparent transparent
+                    transparent;
                 }
               }
             }
@@ -214,12 +215,12 @@ body.yellow-theme {
     }
   }
   .boram-widget-group {
-    .widget-board-list{
-      .boram-widget{
-        .widget-board-content{
-          li{
-            >a{
-              &:hover em{
+    .widget-board-list {
+      .boram-widget {
+        .widget-board-content {
+          li {
+            > a {
+              &:hover em {
                 color: $yellow-color;
               }
             }
@@ -242,7 +243,7 @@ body.yellow-theme {
     h3 {
       color: $yellow-color;
     }
-    .btn-contact{
+    .btn-contact {
       background-color: $yellow-color;
     }
   }
@@ -252,15 +253,15 @@ body.yellow-theme {
         nav {
           .nav-list {
             li {
-              a{
-                &:hover{
+              a {
+                &:hover {
                   color: $yellow-color !important;
                 }
               }
               &.sub-menu {
                 .sub-menu-list {
                   .sub-menu.open {
-                    >a{
+                    > a {
                       color: $yellow-color;
                     }
                     .sub-wrap {

@@ -40,15 +40,16 @@ window.jQuery(function ($) {
     if ($(window).innerWidth() < 992) {
       if ($submenu.length !== 0) {
         // 타겟의 부모가 서브메뉴를 갖고 있는 경우
-        event.preventDefault()
+
         if ($ul.is(':visible')) {
           // 하위 sub-menu 에 열려있는건 닫음
-          $ul.find('.sub-menu-list').slideUp('fast')
-          $ul.find('.sub-menu').removeClass('open')
-          $ul.slideUp('fast')
-          $submenu.removeClass('open')
+          // $ul.find('.sub-menu-list').slideUp('fast')
+          // $ul.find('.sub-menu').removeClass('open')
+          // $ul.slideUp('fast')
+          // $submenu.removeClass('open')
         } else {
           // 동일 sub-menu 에 열려있는건 닫음
+          event.preventDefault()
           var $parent = $submenu.parent()
           $parent.find('.sub-menu .sub-menu-list').slideUp('fast')
           $parent.find('.sub-menu.open').removeClass('open')
@@ -59,29 +60,29 @@ window.jQuery(function ($) {
         $('.sub-menu').removeClass('open')
         $ul.slideUp('fast')
       }
-    } else {
-      if ($submenu.length !== 0) {
-        event.preventDefault()
-        if ($ul.is(':visible')) {
-          // 열려있는건 닫음
-          $ul.find('.sub-menu').removeClass('open')
-          $submenu.removeClass('open') // target을 다시 클릭 시 서브 메뉴 닫기
-          $('.depth-fixed .open-temp').addClass('open-fixed') // 열려있는 서브메뉴를 다시 닫기 시 기존에 고정되었던 서브메뉴 열기
-        } else {
-          // 동일 sub-menu 에 열려있는건 닫음
-          var $parent = $submenu.parent()
-          $parent.find('.sub-menu.open').removeClass('open')
-          $parent.find('.sub-menu.open-fixed').addClass('open-temp')
-          // 2depth 고정형(페이지 접속시 2depth 펼쳐져 있는 경우) 다른 상위 뎁스 클릭 시 .open-temp 추가(이후 document 클릭 시 .open-fixed 추가하기 위함)
-          $parent.find('.sub-menu.open-fixed').removeClass('open-fixed')
-          // 2depth 고정형(페이지 접속시 2depth 펼쳐져 있는 경우) 다른 상위 뎁스 클릭 시 서로 겹쳐보이지 않게 하기 위함
-          $submenu.addClass('open')
-        }
-      } else {
-        // 타겟의 부모가 서브메뉴가 아닌 경우 (document)
-        $('.sub-menu.open').removeClass('open')
-        $('.sub-menu.open-temp').addClass('open-fixed')
-      }
+    // } else {
+    //   if ($submenu.length !== 0) {
+    //     event.preventDefault()
+    //     if ($ul.is(':visible')) {
+    //       // 열려있는건 닫음
+    //       $ul.find('.sub-menu').removeClass('open')
+    //       $submenu.removeClass('open') // target을 다시 클릭 시 서브 메뉴 닫기
+    //       $('.depth-fixed .open-temp').addClass('open-fixed') // 열려있는 서브메뉴를 다시 닫기 시 기존에 고정되었던 서브메뉴 열기
+    //     } else {
+    //       // 동일 sub-menu 에 열려있는건 닫음
+    //       var $parent = $submenu.parent()
+    //       $parent.find('.sub-menu.open').removeClass('open')
+    //       $parent.find('.sub-menu.open-fixed').addClass('open-temp')
+    //       // 2depth 고정형(페이지 접속시 2depth 펼쳐져 있는 경우) 다른 상위 뎁스 클릭 시 .open-temp 추가(이후 document 클릭 시 .open-fixed 추가하기 위함)
+    //       $parent.find('.sub-menu.open-fixed').removeClass('open-fixed')
+    //       // 2depth 고정형(페이지 접속시 2depth 펼쳐져 있는 경우) 다른 상위 뎁스 클릭 시 서로 겹쳐보이지 않게 하기 위함
+    //       $submenu.addClass('open')
+    //     }
+    //   } else {
+    //     // 타겟의 부모가 서브메뉴가 아닌 경우 (document)
+    //     $('.sub-menu.open').removeClass('open')
+    //     $('.sub-menu.open-temp').addClass('open-fixed')
+    //   }
     }
   })
 })
