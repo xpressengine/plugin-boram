@@ -1,6 +1,6 @@
 {
     "name": "xpressengine-plugin/boram",
-    "description": "This Package is Xpressengine Plugin - Boram Theme.",
+    "description": "회사 소개형 사이트를 제작시에 어울리는 테마와 위젯을 제공하고 있습니다.",
     "keywords": [
         "xpressengine",
         "plugin"
@@ -9,13 +9,13 @@
     "version": "1.0.2",
     "type": "xpressengine-plugin",
     "support": {
-        "email": "input@your.email"
+        "email": "developer@xpressengine.com"
     },
     "authors": [
         {
-            "name": "input your name",
-            "email": "input@your.email",
-            "homepage": "http://input.your.site",
+            "name": "XE Developers",
+            "email": "developer@xpressengine.com",
+            "homepage": "https://store.xehub.io/plugins/boram",
             "role": "Developer"
         }
     ],
