@@ -1,19 +1,34 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: seungman
- * Date: 2017. 3. 3.
- * Time: PM 6:34
+ * ContactController.php
+ *
+ * PHP version 7
+ *
+ * @category    Boram
+ * @package     Xpressengine\Plugins\Boram
+ * @author      XE Developers <developers@xpressengine.com>
+ * @copyright   2019 Copyright XEHub Corp. <https://www.xehub.io>
+ * @license     http://www.gnu.org/licenses/lgpl-3.0-standalone.html LGPL
+ * @link        https://xpressengine.io
  */
 
 namespace Xpressengine\Plugins\Boram\Controllers;
-
 
 use App\Http\Controllers\Controller;
 use Xpressengine\Http\Request;
 use Xpressengine\Plugins\Boram\Theme\Theme;
 use Mail;
 
+/**
+ * Class ContactController
+ *
+ * @category    Boram
+ * @package     Xpressengine\Plugins\Boram
+ * @author      XE Developers <developers@xpressengine.com>
+ * @copyright   2019 Copyright XEHub Corp. <https://www.xehub.io>
+ * @license     http://www.gnu.org/licenses/lgpl-3.0-standalone.html LGPL
+ * @link        https://xpressengine.io
+ */
 class ContactController extends Controller
 {
     public function send(Request $request)

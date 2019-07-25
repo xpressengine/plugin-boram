@@ -1,9 +1,15 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: seungman
- * Date: 2017. 3. 8.
- * Time: PM 2:55
+ * SettingsContentsController.php
+ *
+ * PHP version 7
+ *
+ * @category    Boram
+ * @package     Xpressengine\Plugins\Boram
+ * @author      XE Developers <developers@xpressengine.com>
+ * @copyright   2019 Copyright XEHub Corp. <https://www.xehub.io>
+ * @license     http://www.gnu.org/licenses/lgpl-3.0-standalone.html LGPL
+ * @link        https://xpressengine.io
  */
 
 namespace Xpressengine\Plugins\Boram\Controllers;
@@ -12,6 +18,16 @@ use XeConfig;
 use App\Http\Controllers\Controller;
 use Xpressengine\Http\Request;
 
+/**
+ * Class SettingsContentsController
+ *
+ * @category    Boram
+ * @package     Xpressengine\Plugins\Boram
+ * @author      XE Developers <developers@xpressengine.com>
+ * @copyright   2019 Copyright XEHub Corp. <https://www.xehub.io>
+ * @license     http://www.gnu.org/licenses/lgpl-3.0-standalone.html LGPL
+ * @link        https://xpressengine.io
+ */
 class SettingsContentsController extends Controller
 {
     public function settings()
