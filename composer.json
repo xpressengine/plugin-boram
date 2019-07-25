@@ -5,8 +5,8 @@
         "xpressengine",
         "plugin"
     ],
-    "license": "LGPL-2.1-or-later",
-    "version": "1.0.2",
+    "license": "LGPL-3.0-or-later",
+    "version": "1.0.3",
     "type": "xpressengine-plugin",
     "support": {
         "email": "developer@xpressengine.com"
@@ -31,7 +31,9 @@
             }
         }
     },
-    "require": {},
+    "require": {
+        "xpressengine/xpressengine": "~3.0.2"
+    },
     "autoload": {
         "psr-4": {
             "Xpressengine\\Plugins\\Boram\\": "src/"
